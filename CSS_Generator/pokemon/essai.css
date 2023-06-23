@@ -1,0 +1,40 @@
+.Bulbizarre {
+	width: 774px; height: 721px;
+	background: url('pokemon/plouf.png') no-repeat -0px 0;
+}
+
+.Germignon {
+	width: 975px; height: 1280px;
+	background: url('pokemon/plouf.png') no-repeat -774px 0;
+}
+
+.Kaiminus {
+	width: 804px; height: 1280px;
+	background: url('pokemon/plouf.png') no-repeat -1749px 0;
+}
+
+.Mousti {
+	width: 250px; height: 389px;
+	background: url('pokemon/plouf.png') no-repeat -2553px 0;
+}
+
+.Poussifeu {
+	width: 250px; height: 381px;
+	background: url('pokemon/plouf.png') no-repeat -2803px 0;
+}
+
+.carapuce {
+	width: 250px; height: 259px;
+	background: url('pokemon/plouf.png') no-repeat -3053px 0;
+}
+
+.héricendre {
+	width: 250px; height: 280px;
+	background: url('pokemon/plouf.png') no-repeat -3303px 0;
+}
+
+.salameche {
+	width: 800px; height: 905px;
+	background: url('pokemon/plouf.png') no-repeat -3553px 0;
+}
+

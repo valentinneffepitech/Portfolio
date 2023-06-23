@@ -1,0 +1,96 @@
+#!/usr/bin/php
+<?php
+$name = 'sprite.png';
+$file = 'style.css';
+foreach ($argv as $k => $arg) {
+    if ($argv[$k] == '-i' || $argv[$k] == '--output-image') {
+        if (substr($argv[$k + 1], -4) == '.png') {
+            $name = $argv[$k + 1];
+        } else {
+            $name = $argv[$k + 1] . ".png";
+        }
+    } elseif ($argv[$k] == '-s' || $argv[$k] == '--output-style') {
+        if (substr($argv[$k + 1], -4) == '.css') {
+            $file = $argv[$k + 1];
+        } else {
+            $file = $argv[$k + 1] . ".css";
+        }
+    } elseif ($argv[$k] == '-r' || $argv[$k] == '--reccursive') {
+        $reccursive = 'allowed';
+    }
+}
+$dir = $argv[$argc - 1];
+
+function recScan($path)
+{
+    $tabs = glob($path . '/*', GLOB_ONLYDIR);
+    $pics = glob($path . '/*.png');
+    $pics = array_merge($tabs, $pics);
+    foreach ($pics as $pic) {
+        if (is_dir($pic)) {
+            recScan($pic);
+        } else {
+            $GLOBALS['images'][] = $pic;
+        }
+    }
+}
+
+function css_generator()
+{
+    global $dir;
+    global $name;
+    global $file;
+    if (isset($GLOBALS['reccursive']) && $GLOBALS['reccursive'] === 'allowed') {
+        recScan($dir);
+        $tab = $GLOBALS['images'];
+    } else {
+        $tab = glob($dir . '/*.png');
+    }
+    if (count($tab) == 0) {
+        echo "Pas d'image compatible";
+    } else {
+        $i = 0;
+        $j = 0;
+        $css = [];
+        foreach ($tab as $image) {
+            $img = imagecreatefrompng($image);
+            $css[] = getimagesize($image);
+            $i += imagesx($img);
+            if (imagesy($img) > $j) {
+                $j = imagesy($img);
+            } else {
+                $j = $j;
+            }
+        }
+        $bg = imagecreatetruecolor($i, $j);
+        $blanc = imagecolorallocatealpha($bg, 255, 255, 255, 127);
+        imagefill($bg, 0, 0, $blanc);
+        imagealphablending($bg, false);
+        imagesavealpha($bg, true);
+        $s = 0;
+        foreach ($tab as $image) {
+            $img = imagecreatefrompng($image);
+            $position[] = $s;
+            $ordonnee = 0;
+            imagecopy($bg, $img, $s, $ordonnee, 0, 0, imagesx($img), imagesy($img));
+            $s += imagesx($img);
+            imagedestroy($img);
+        }
+        imagepng($bg, $name);
+        $t = "";
+        for ($c = 0; $c <= count($tab); $c++) {
+            if (isset($tab[$c])) {
+                $t .=  "." . basename($tab[$c], '.png') . " {" . PHP_EOL . "\twidth: " . $css[$c][0] . "px; height: " . $css[$c][1] . "px;" . PHP_EOL . "\tbackground: url('" . $name . "') no-repeat -" . $position[$c] . "px " . $ordonnee . ";" . PHP_EOL . "}" . PHP_EOL . PHP_EOL;
+            }
+            file_put_contents($file, $t);
+        }
+    }
+}
+if (is_dir($dir)) {
+    css_generator();
+} else {
+    echo "Le chemin de dossier ne correspond pas désolé !\n";
+}
+
+
+?>

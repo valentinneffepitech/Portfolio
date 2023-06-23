@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="jeu.css"> -->
+    <title>Puissance 4</title>
+</head>
+
+<body>
+    <h1 style="text-align: center;">Puissance 4</h1>
+    <div id="board">
+
+    </div>
+    <script type="module">
+        import p4 from './classes/script.js';
+
+        const options = {
+            c1: 'green',
+            c2: 'purple',
+            y: 6,
+            x: 7,
+            p1: 'baptiste',
+            p2: 'Player 2'
+        }
+        let cross = new p4('#board', options);
+    </script>
+</body>
+
+</html>

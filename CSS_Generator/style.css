@@ -1,0 +1,10 @@
+.fleche {
+	width: 700px; height: 368px;
+	background: url('sprite.png') no-repeat -0px 0;
+}
+
+.soleil {
+	width: 721px; height: 346px;
+	background: url('sprite.png') no-repeat -700px 0;
+}
+

@@ -1,0 +1,496 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family:'Arial',sans-serif;
+}
+
+a{
+	color: black;
+	text-decoration: none;
+}
+
+header{
+	background-color: #CCFFFF;
+}
+
+ul {
+	margin-left: 0;
+	padding-left: 0;
+}
+
+ul li{
+	list-style-type:none;
+}
+
+nav{
+	background-color: #9A99FF;
+	padding: 5% 0;
+}
+
+nav ul li{
+	padding: 2% 0;
+	padding-left: 3%;
+	border-top: 1px lightgray solid;
+}
+
+#hide_book, #hide__destination{
+	background-color: #fff;
+	margin-left: 0;
+	padding-left: 0;
+	position: absolute;
+	padding: 1vh 1%;
+}
+
+#hide_book li, #hide__destination li{
+	padding: 5px 3px;
+}
+
+#hide_book li:hover, #hide__destination li:hover{
+	background-color: #CCFFFF;
+}
+
+#logo{
+	display: flex;
+	justify-content: center;
+	padding: 2% 0;
+}
+
+#social img{
+	margin-right: 1%;
+}
+
+#fleches{
+	z-index: 2000;
+	position: relative;
+	bottom : 100px;
+}
+
+nav{
+	border-top: solid 1px black;
+	border-bottom: 1px solid black;
+}
+
+#home{
+	color: red;
+}
+
+#actif{
+	transform: rotate(90deg);
+	margin: 0 45%;
+}
+
+#defile{
+	width: 88%;
+	margin: 5% 6%;
+}
+
+#carroussel__image{
+	padding-bottom: 5%;
+	background-color:#CCFFFF;
+}
+
+#minsec{
+	padding-top: 5%;
+	background-color:#CCFFFF;
+}
+
+#text__deco{
+	color: rgba(0,0,0,0);
+}
+
+#travel h1{
+	font-size: 1.5rem;
+}
+
+#logo img{
+	width: 50%;
+}
+
+#forward{
+	width: 45px;
+	height: 45px;
+	object-fit: cover;
+	object-position: 0% 10%;
+	margin-left: 9%;
+}
+
+#next{
+	width: 45px;
+	height: 45px;
+	object-fit: cover;
+	object-position: 100% 10%;
+	margin-left:55%;
+}
+
+.categories__titre{
+	display: flex;
+	justify-content : space-between;
+	background-color: #9A99FF;
+	color: white;
+	margin: 0;
+	padding: 2% 0;
+}
+
+.categories__titre h3{
+	margin-top: 2%;
+	margin-left: 2%;
+}
+
+.info{
+	color:red;
+}
+
+.categories__colonne{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 98%;
+	margin-left: 1%;
+}
+
+.categories__colonne p{
+	padding : 2% 0;
+	font-size: 12px;
+	line-height: 1.5rem;
+}
+
+#categories{
+	padding-top : 10%;
+	margin-top: 0;
+	background: white;
+	border-top: 1px black solid;
+}
+
+#travel{
+	background-color: white;
+	padding-top : 10%;
+	font-size: 1.6rem;
+	border-bottom: black solid 1px;
+}
+
+#france, #algerie, #bresil{
+	font-size: 0.8rem;
+}
+
+#algerie, #bresil{
+	display: none;
+}
+
+#france img, #algerie img, #bresil img{
+	width: 88%;
+	margin: 0 4%;
+	padding: 2%;
+	border: 1px black solid;
+}
+
+#france h2, #algerie h2, #bresil h2{
+	margin-left: 5%;
+	padding-bottom: 10%;
+}
+
+.bleu__article h1{
+	padding: 5% 0 0 1%;
+	border-bottom: lightgray solid 1px;
+	font-size: 1.4rem;
+}
+
+.bleu__article p{
+	line-height: 1.8rem;
+	font-size: 0.7rem;
+	margin-bottom: 0;
+}
+
+.bleu__article__mini img{
+	clear: both;
+	float: left;
+}
+
+#howtravel{
+	padding-top: 5%;
+	background-color:#CCFFFF;
+}
+
+#howtravel h1{
+	font-size: 1.2rem;
+	border-bottom: lightgray 1px solid;
+}
+
+#howtravel p{
+	font-size: 0.8rem;
+	line-height: 1.5rem;
+}
+
+button{
+	width: 40%;
+	background: linear-gradient(#85B06F, #719F5A);
+	font-size: 1.2rem;
+	text-align: center;
+	border: 1px black solid;
+	border-radius: 5px;
+	margin-left: 1%;
+	margin-bottom: 10%;
+	color: white;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+footer{
+	padding: 5% 2%;
+	font-size: 1rem;
+	background-color: #9A99FF;
+	border-top: 1px black solid;
+}
+
+footer p{
+	font-size: 0.7rem;
+	color : lightgray;
+}
+
+footer ul{
+	display: flex;
+	flex-wrap: wrap;
+	padding-top: 10%;
+}
+
+footer ul li{
+	margin-right: 15%;
+	font-size: 0.8rem;
+}
+
+#bouton_rouge{
+	display:none;
+	z-index: 2000;
+	position: relative; 
+	bottom: 70px;
+}
+
+nav img{
+	width:100%;
+}
+
+@media screen and (min-width: 450px){
+
+	#home{
+		color:black;
+	}
+
+	#social, nav, #carroussel__image, #categories, #travel,#minsec ,footer,#howtravel{
+		width: 78%;
+		padding: 8% 12%;
+	}
+
+	.categories__titre{
+		justify-content: flex-start;
+	}
+
+	.categories__colonne{
+		margin-top: 0;
+	}
+
+	.categories__titre img{
+		margin-right:0;
+		margin-left:1%;
+	}
+
+	h3{
+		margin-left: 1%;
+	}
+
+	.bleu__article{
+		display:block;
+	}
+
+	#next{
+		margin-left: 60%;
+	}
+
+	.bleu__article__mini{
+		display: flex;
+	}
+
+	#fleches{
+		z-index: 2000;
+		position: relative;
+		bottom : 130px;
+	}
+	
+	#howtravel h1{
+		margin-top: 0;
+	}
+
+	nav{
+		padding-bottom:8%;
+		border-bottom: black solid 1px;
+	}
+
+	#forward{
+		margin-left: 9%;
+	}
+}
+
+@media screen and (min-width: 700px){
+	nav ul{
+		display:flex;
+	}
+
+	nav ul li{
+		border-top: 1px solid rgba(0,0,0,0);
+	}
+
+	nav img{
+		width:50%;
+	}
+
+	#forward{
+		margin-left: 7%;
+	}
+
+	#next{
+		margin-left: 70%;
+	}
+
+	#fleches{
+		bottom: 200px;
+	}
+
+	#social{
+		margin-right: 1%;
+	}
+
+	.categories__colonne, .travel__colonne{
+		width: 32%;
+		margin-right: 1%;
+	}
+
+	.categories__colonne h3{
+		width:60%;
+		font-size: 1rem;
+	}
+
+	.categories__colonne img{
+		width: 35%;
+	}
+
+	#categories{
+		display:flex;
+		justify-content: space-between;
+		align-items: start;
+	}
+
+	#algerie, #bresil{
+		display: block;
+	}
+
+	#travel article{
+		display: flex;
+	}
+
+	#minsec{
+		display: flex;
+		padding-bottom: 0;
+	}
+
+	.bleu__article{
+		width: 45%;
+		margin-right: 5%;
+	}
+
+	.bleu__article__mini{
+		padding-bottom: 5%;
+		align-items: center;
+	}
+
+	#howtravel{
+		padding: 0 12%;
+	}
+
+	#travel, #categories, #minsec, nav{
+		padding: 2% 12%;
+	}
+
+	#social{
+		padding: 1% 12%;
+	}
+
+	footer{
+		padding-top: 5%;
+	}
+	footer ul li{
+		margin-right: 5%;
+	}
+}
+
+@media screen and (min-width: 1000px){
+
+	#social, nav, #carroussel__image, #categories, #travel,#minsec ,footer,#howtravel{
+		width: 60%;
+		padding: 1% 20%;
+	}
+
+	#social{
+		margin-right: 5px;
+	}
+
+	nav{
+		display: flex;
+		align-items: center;
+	}
+
+	nav img{
+		width:30%;
+		margin-right: 25%;
+	}
+
+	#forward{
+		margin-left: 9%;
+	}
+
+	#next{
+		margin-left: 68%;
+	}
+
+	.categories__colonne, .travel__colonne{
+		width: 33%;
+	}
+
+	.categories__titre h3{
+		font-size: 1.35em;
+	}
+
+	.categories__titre img{
+		width : 25%;
+	}
+
+	#travel, #minsec, footer{
+		padding: 0 20%;
+	}
+
+	button{
+		margin-bottom: 1%;
+		padding: 2%;
+		width: 15%;
+		margin-left: 0;
+	}
+
+	#nav_footer{
+		padding-top: 2%;
+	}
+
+	#text__deco{
+		background-color: rgba(0,0,0,0.4);
+		color: rgba(255,255,255,1);
+		width: 88%;
+		line-height: 3rem;
+		margin-left: 6%;
+	}
+
+	#fleches{
+		position: relative;
+		bottom: 170px;
+	}
+
+	footer p{
+		padding-bottom: 2%;
+	}
+
+}

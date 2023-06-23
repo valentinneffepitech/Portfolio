@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-color: wheat;
+    }
+</style>
+
+<body>
+    <ul class="nav navbar">
+        <button class="toggler btn-secondary btn-md hidden-print">MENU</button>
+        <li class="nav-item">ACTIF</li>
+        <li class="nav-item dropdown">DROPDOWN
+            <div class="dropdown-content">
+                <div class="dropdown-item">Un dropdown</div>
+                <div class="dropdown-item">Un autre</div>
+                <div class="dropdown-item">Encore un</div>
+                <div class="dropdown-item">Un dernier</div>
+            </div>
+        </li>
+        <li class="nav-item">NOTHING</li>
+        <li class="nav-item nav-link"><a href="#" title="Ce lien ne sert à rien">LINK</a></li>
+        <li class="nav-item nav-link disabled"><a href="#" title="Si vous lisez ça c'est pas bon signe">DISABLED</a>
+        </li>
+    </ul>
+    <h1>My Little Framework Training</h1>
+    <main class="container">
+        <div>
+            <div class="col-demo-1 col-1">Col-1</div>
+            <div class="col-demo-2 col-2">Col-2</div>
+            <div class="col-demo-3 col-3">Col-3</div>
+            <div class="col-demo-4 col-4">Col-4</div>
+            <div class="col-demo-5 col-5">Col-5</div>
+            <div class="col-demo-6 col-6">Col-6</div>
+            <div class="col-demo-7 col-7">Col-7</div>
+            <div class="col-demo-8 col-8">Col-8</div>
+            <div class="col-demo-9 col-9">Col-9</div>
+            <div class="col-demo-10 col-10">Col-10</div>
+            <div class="col-demo-11 col-11">Col-11</div>
+            <div class="col-demo-12 col-12">Col-12</div>
+        </div>
+        <ul class="tab-list">
+            <li data-target="#hide">Cacher les onglets</li>
+            <li data-target="#text">La grosse div</li>
+            <li data-target="#para1">Premier paragraphe</li>
+            <li data-target="#para2">Deuxieme paragraphe</li>
+        </ul>
+        <div class="tab-content" id="hide">
+            <div id="text" class="tab-pane bg-danger text-light">
+                Fodes Karai! 
+                <p id="para1" class="tab-pane bg-light text-dark">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, aut laborum rerum, nesciunt,
+                    reprehenderit distinctio dolore doloremque voluptatum ex perferendis veritatis quo? Voluptatum qui
+                    quaerat laborum voluptate doloremque nobis a!
+                </p>
+                <p id="para2" class="tab-pane bg-dark text-light">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, quaerat? Reprehenderit, ipsum
+                    deleniti? Quas voluptatibus optio temporibus quibusdam assumenda quis a numquam, fugiat iure
+                    asperiores
+                    deleniti, dolor deserunt. Nulla, provident?
+                </p>
+            </div>
+        </div>
+        <div>
+            <button data-placement="left" title="un bouton qui a une taille SM" class="tooltip btn btn-sm">SM</button>
+            <button data-placement="right" title="un bouton qui a une taille MD" class="tooltip btn btn-md">MD</button>
+            <button data-placement="top" title="un bouton qui a une taille LG" class="tooltip btn btn-lg">LG</button>
+            <button data-placement="bottom" title="un bouton qui a une taille XL" class="tooltip btn btn-xl">XL</button>
+            <button data-placement="top" title="un bouton qui a une taille XXL" class="tooltip btn btn-xxl">XXL</button>
+
+            <button class="tooltip btn btn-outline-primary btn-modal" id="btnmodal" data-target="#myModal">Afficher le Popin</button>
+        </div>
+        <div id="myModal" class="modal bg-warning text-light">
+            <p class="col-5 text-light bg-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime aut,
+                libero
+                delectus perspiciatis tempora nulla veniam similique quod cum ea quae nemo ullam ad expedita dicta
+                tenetur incidunt accusantium. Temporibus.</p>
+            <p class="col-5 text-danger bg-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint minus
+                nisi
+                corporis ratione! Eum perferendis eaque, quo illo ratione sequi veniam quos vero, voluptas ducimus vitae
+                omnis sed velit iusto?</p>
+            <button class="col-1 btn-outline-danger btn-lg popin-dismiss">Close</button>
+        </div>
+
+        <img src="test.jpg" class="img-rounded img-responsive visible-lg hidden-print" alt="bg">
+        <img src="test.jpg" class="img-rounded img-responsive hidden-md img-blur" alt="bg">
+        <div>
+            <p class="text-success bg-light">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus animi veritatis accusamus incidunt
+                debitis quis magni aperiam officiis sequi consequuntur minus quae repellendus, nihil voluptatem? Quis
+                omnis fugiat aliquid ut.
+            </p>
+            <p class="alert-danger text-light">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt cum atque aliquid, excepturi eos
+                veritatis voluptatibus accusantium natus maxime rem fugiat sint quae! Dolores odit mollitia quo eum
+                corrupti! Nostrum.
+            </p>
+        </div>
+    </main>
+    <script src="./script.js"></script>
+</body>
+
+</html>
