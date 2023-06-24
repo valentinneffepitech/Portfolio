@@ -1,0 +1,32 @@
+*{
+    transition: all 0.5s linear;
+}
+
+.row, .cell{
+    height: 20vh;
+    aspect-ratio: 1/1;
+}
+
+.row{
+    display: flex;
+}
+
+.cell{
+    border:1px black solid;
+    transition: background-color 0 linear;
+}
+
+.cell:hover{
+    background-color:#ccc;
+}
+
+.cell:active{
+    background: #4a4a4a;
+}
+
+body{
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
