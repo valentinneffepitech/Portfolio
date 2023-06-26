@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, 'Geneva', Tahoma, sans-serif;
+}
+
+a{
+    color: transparent;
+    padding: 10px;
+    animation: color-change 1s infinite;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+  
+  @keyframes color-change {
+    0% { color: #f1f1f1; border: 1px solid #f1f1f1; border-radius: 10px;}
+    25%{ color: pink; border: 1px solid pink; border-radius: 10px;}
+    50% { color: darkslategrey; border: 1px solid darkslategrey; border-radius: 10px;}
+    75% { color: pink; border: 1px solid pink; border-radius: 10px;}
+    100% { color: #f1f1f1; border: 1px solid #f1f1f1; border-radius: 10px;}
+  }
+
+main{
+    background: url('style.gif');
+    background-size: cover;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}

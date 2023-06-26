@@ -1,0 +1,274 @@
+// Fonts
+@import url('https://fonts.bunny.net/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import 'bootstrap/scss/bootstrap';
+
+footer{
+    position: fixed;
+    bottom: 0;
+}
+
+img{
+    border: 1px solid black;
+}
+
+#form_profil, #form_annonce_add{
+    width: 70vw;
+    margin-left: 15vw;
+}
+
+#form_annonce_add{
+    display: flex;
+    flex-direction: column;
+}
+
+h1, h4{
+    margin-left: 10vw;
+}
+
+h3{
+    margin-top: 5vh;
+    margin-left: 15vw;
+}
+
+#annonce_pics{
+    width: 0.1px;
+    height: 0.1px;
+}
+
+#annonce_preview{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#annonce_preview img{
+    aspect-ratio: 4/3;
+    width: 31%;
+    margin-right: 2%;
+    border-radius: 10px;
+}
+
+label, button{
+    text-align: center;
+    cursor:pointer;
+}
+
+textarea{
+    height: 10vh;
+    resize: none;
+}
+
+input, label{
+    margin-bottom: 1vh;
+}
+
+#form_sub label{
+    width: 50%;
+}
+
+#form_sub input{
+    margin-left: 20%;
+}
+
+.annonces, .annonces_home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 60vh;
+    overflow: scroll;
+}
+
+.annonces_home{
+    height: 80vh;
+}
+
+.annonce{
+    padding: 2vh 1%;
+    width: 50vw;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.annonce p{
+    text-overflow: break-word;
+}
+
+.annonce button{
+    margin-top: 1vh;
+    border: 2px solid transparent;
+    transition: border 0.5s ease, color 0.5s ease, background 0.5s ease;  
+}
+
+.annonce button:hover{
+    border: 2px solid black;
+    color: transparent;
+    background: url('call.jpg') no-repeat;
+    background-position: 50% 0;
+    background-size: contain;
+}
+
+.images_annonce{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+h6{
+    font-size: 1.1em;
+}
+
+.date{
+    font-size: 0.8em;
+    font-style: italic;
+}
+
+.images_annonce img{
+    width: 30%;
+    margin-right: 1%;
+    border-radius: 5px;
+}
+
+#modify_annonce{
+    resize: none;
+}
+
+#Overlay{
+    display:none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    height: 85vh;
+    width: 100vw;
+    background: #2c2a2a;
+}
+
+#annonce_modifier{
+    background: #ccc;
+    border-radius: 10px;
+    margin-top: 10vh;
+    height:40vh;
+    width : 40vw;
+}
+
+#annonce_modifier input, #annonce_modifier textarea{
+    margin-top: 3vh;
+    margin-left: 35%;
+    margin-right: 30%;
+}
+
+#annonce_delete{
+    margin-left: 5%;
+}
+
+#annonce_modifier button{
+    margin: 10px 35%;
+}
+
+#searchbar, #prix_min{
+    margin-left: 2vw;
+}
+
+#welcome img{
+    width: 100%;
+}
+
+#welcome h1, #welcome h2{
+    font-size: 2em;
+}
+
+#message_recus{
+    margin-top: 3vh;
+    height: 50vh;
+    overflow: scroll;
+    background: #ccc;
+    border-radius: 10px 10px 0% 0%;
+}
+
+#zone_text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1vh;
+    border-radius:  0% 0% 10px 10px;
+    background: #2c2a2a;
+    padding: 2vh;
+}
+
+#zone_text textarea{
+    overflow-wrap: break-word;
+    width: 20vw;
+    margin-right: 3vw;
+}
+
+.message, .foreign_message{
+    width: 50%;
+    border-radius: 10px;
+}
+
+.message p, .foreign_message p{
+    overflow-wrap: break-word;
+    padding:  1vh 2%;
+    margin-top: 1vh;
+}
+
+.foreign_message{
+    margin-left: 45%;
+    background: #f1f1f1;
+}
+
+.message{
+    margin-left: 5%;
+    color: #f1f1f1;
+    background: #1754da;
+}
+
+#messagerie{
+    margin-top: 2vh;
+}
+
+#messagerie a{
+    color: #2c2a2a;
+    text-decoration: none;
+}
+
+.message_entry{
+    padding: 10px;
+    border: 1px black solid;
+    width: 80%;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 3vh 5%;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.message_entry:hover{
+    background: #2c2a2a;
+    color: #f1f1f1;
+}
+
+.message_entry p{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-left: 3%;
+}
+
+.perso_annonce{
+    transition: background 0.5s ease;
+}
+
+.perso_annonce:hover{
+    cursor: pointer;
+    background-color: #ccc;
+    border-top: 1px solid #f1f1f1;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button{
+    display: none;
+}
