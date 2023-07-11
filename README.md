@@ -19,4 +19,7 @@ Battleship was a debugging exercice where we get the code from someone but fille
 
 Morpion is a Tic Tac Toe we had to code from scratch in less than 3 hours (did in 1 and a half).
 
-And pokedex is a personnal project i did looking a bit like pokepedia. It's almost finished but you can test it there : https://valentinneffepitech.github.io
+And pokedex is a personnal project i did looking a bit like pokepedia.
+
+Update! My portfolio is now online check it out! (profile picture is not present yet but coming soon)
+https://valentinneffepitech.github.io
