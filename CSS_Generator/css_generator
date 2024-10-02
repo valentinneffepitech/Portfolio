@@ -1,4 +1,7 @@
 #!/usr/bin/php
+
+//Test debug git
+
 <?php
 $name = 'sprite.png';
 $file = 'style.css';
