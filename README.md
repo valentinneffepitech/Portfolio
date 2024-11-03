@@ -20,4 +20,5 @@ Battleship was a debugging exercice where we get the code from someone but fille
 Morpion is a Tic Tac Toe we had to code from scratch in less than 3 hours (did in 1 and a half).
 
 Update! My portfolio is now online check it out! (profile picture is not present yet but coming soon)
+<br/>
 <a href="https://www.valentinneff.fr/" target="_blank">Check it out!</a>
