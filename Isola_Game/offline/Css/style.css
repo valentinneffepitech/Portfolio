@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#plateau{
+    width: 50%;
+    aspect-ratio: 1/1;
+    margin: 1rem auto;
+}
+
+.ligne{
+    display: flex;
+}
+
+.case{
+    background-color: #EC9A29;
+    border: 1px solid #000;
+    width: 15%;
+    aspect-ratio: 1/1;
+}
+
+#Pawn1, #Pawn2{
+    width: 100%;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    cursor: pointer;
+    display: grid;
+    place-content: center;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body{
+    background: #143642;
+}
+
+#Pawn1{
+    background-color: #143642;
+    border: 2px solid #FA8334;
+}
+
+#Pawn2{
+    background-color: #0F8B8D;
+    border: 2px solid white;
+}
+
+.case.used{
+    pointer-events: none;
+}
+
+.case.Pawn1{
+    background-color: #B5BAD0 !important;
+}
+
+.case.Pawn2{
+    background-color: #686868 !important;
+}
+
+.case.occupied{
+    pointer-events: all!important;
+}
+
+.isPlayable{
+    background-color: purple !important;
+}

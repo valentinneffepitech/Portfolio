@@ -1,0 +1,46 @@
+.input-login{
+    opacity: 0.8;
+    width: 50vw;
+    border: 4px solid #ccc;
+    font-size: 1rem;
+    border-radius: .2rem;
+    padding: 0.8rem;
+    color: #315ae0;
+    border-radius: 0.3rem;
+}
+
+.input-login:focus{
+    border-color: rgb(0, 0, 99);
+    color: black;
+}
+
+.input-login::placeholder{
+    color: #ff4444  ;
+}
+
+.btn-login{
+    width: 10vw;
+    margin: 0 auto;
+    background-color: rgb(87, 87, 87);
+    color: rgb(18, 0, 66);
+    border: 1px solid transparent;
+    border-radius: 0.3rem;
+    padding: 1rem;
+    font-size: 1.3rem;
+}
+
+.btn-login:hover{
+    background-color: rgb(167, 167, 167);
+    color: #315ae0;
+    border-color: #315ae0;
+}
+
+#form-login{
+    height: 50vh;
+    display: grid;
+    place-content: center;
+}
+
+.main-title{
+    padding-top: 5vh;
+}

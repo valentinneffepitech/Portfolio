@@ -1,0 +1,130 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/utilities';
+@import 'tailwindcss/components';
+
+@font-face {
+  font-family: 'GetNow';
+  src: url('./component/fonts/Get\ Now.ttf') format('truetype');
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.2s ease;
+}
+
+.App {
+  text-align: center;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.main-title{
+  text-align: center;
+  color: rgb(104, 104, 218);
+  font-family: 'GetNow', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.logo
+{
+  width: 15vw;  
+}
+.affiche img
+{
+    width: 100%;
+    cursor: pointer;
+}
+.affiche
+{
+  width: 20%;
+  margin: 10px;
+  height: 60vh;
+  overflow: hidden;
+  border: 2px #ccc solid;
+}
+.list_films
+{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  justify-content: space-around;
+}
+.affiche h3 
+{
+  opacity: 0;
+  display: grid;
+  color: white;
+  min-height: 11vh;
+  text-align: center;
+  position: relative;
+  place-content: center;
+  background-color: black !important;
+}
+.affiche:hover h3
+{
+  opacity: 1;
+  transform: translateY(-12vh);
+}
+.icone{
+  cursor: pointer;
+  margin: 1vh auto;
+  width: 25px !important;
+  background-color: transparent !important;
+}
+.affiche:hover 
+{
+  transform: translateY(-10px);
+  box-shadow: 0px 0px 10px 10px darkgrey;
+}
+.title 
+{
+  font-size: 50px;
+  font-style: bold;
+  text-align: center;
+  color: rgb(0, 0, 56) !important;
+  font-family: 'GetNow', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.title h1{
+  color: rgb(0, 0, 56);
+}
+
+nav{
+  width: 90%;
+}
+
+header{
+  border-bottom: 2px solid #ccc;
+}
+
+#searchzone{
+  width:35%;
+  margin: 1vh auto;
+}
+
+#searchbar{
+  width: 100%;
+  padding: .8rem;
+  background-color: #ccc;
+  border-radius: 2rem;
+}
+
+#searchResults{
+  position: absolute;
+  background-color: white;
+  width: 30%;
+  left: 35%;
+  margin: 0 auto;
+}
+
+#searchResults div{
+  padding: 1rem;
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;
+}

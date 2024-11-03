@@ -1,0 +1,144 @@
+* {
+  transition: all 0.2s ease-in;
+}
+
+#disco {
+  height: 100vh;
+}
+
+.btn:hover {
+  border: 1px solid #ccc !important;
+  background-color: #ccc;
+  color: black;
+}
+
+#title {
+  margin-bottom: 10vh;
+}
+
+#chat {
+  height: 80vh;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+#chat_head,
+#chat_footer {
+  height: 10vh;
+}
+
+#chat_body {
+  height: 60vh;
+  background-color: #494368;
+  overflow: scroll;
+  border: 2px rgb(15, 151, 166) solid;
+}
+
+#liste {
+  position: fixed;
+  top: 25vh;
+  left: 1vw;
+  width: 12vw;
+  overflow: scroll;
+}
+
+.container {
+  height: 100vh !important;
+}
+
+.active {
+  background-color: #475841 !important;
+}
+
+.message {
+  max-width: 90%;
+  margin: 1vh 1vw;
+  padding: 3px;
+  border: 1px solid black;
+  background-color: #38302E;
+}
+
+.you {
+  background-color: #1F2041;
+  margin-left: 8%;
+}
+
+.status {
+  width: 90%;
+  margin: 1vh 1vw;
+  padding: 3px;
+}
+
+.list-group {
+  height: 20vh;
+  margin-bottom: 5vh;
+  overflow: scroll;
+  border: 2px rgb(15, 151, 166) solid;
+  padding: 1rem;
+}
+
+.list-group-item {
+  cursor: pointer;
+}
+
+#notif {
+  position: fixed;
+  bottom: 3vh;
+  right: 3vw;
+  max-width: 10vw;
+  max-height: 30vh;
+  overflow: scroll;
+  padding: 1rem;
+}
+
+#logo {
+  position: fixed;
+  top: 1vh;
+  left: 1vw;
+}
+
+#logo img {
+  width: 10vw;
+}
+
+.sender {
+  cursor: pointer;
+}
+
+.popup {
+  animation: fading 5s;
+  padding: 1rem;
+}
+
+@keyframes fading {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+#modifier {
+  height: 15vh;
+}
+
+#channel_users {
+  position: fixed;
+  top: 25vh;
+  right: 1vw;
+  width: 12vw;
+  overflow: scroll;
+  max-height: 40vh;
+}
+
+.private_message {
+  background-color: grey;
+  color: #38302E;
+}
+
+#del_button {
+  position: fixed;
+  right: 2vw;
+  top: 20vh;
+}/*# sourceMappingURL=App.css.map */

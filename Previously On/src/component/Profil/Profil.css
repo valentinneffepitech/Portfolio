@@ -1,0 +1,40 @@
+#series{
+    display: flex;
+    flex-wrap: wrap;
+}
+#series .serie_card{
+    width: 25%;
+    cursor: pointer;
+    border: 3px solid transparent;
+}
+#series .serie_card:nth-child(6n+1):hover{
+    box-shadow: 0 0 3rem lime;
+    border-color: lime;
+}
+#series .serie_card:nth-child(6n+2):hover{
+    box-shadow: 0 0 3rem aqua;
+    border-color: aqua;
+}
+#series .serie_card:nth-child(6n+3):hover{
+    box-shadow: 0 0 3rem violet;
+    border-color: violet;
+}
+#series .serie_card:nth-child(6n+4):hover{
+    box-shadow: 0 0 3rem crimson;
+    border-color: crimson;
+}
+#series .serie_card:nth-child(6n+5):hover{
+    box-shadow: 0 0 3rem rgb(255, 136, 0);
+    border-color: rgb(255, 136, 0);
+}
+#series .serie_card:nth-child(6n+6):hover{
+    box-shadow: 0 0 3rem yellow;
+    border-color: yellow;
+}
+#my_series h4.title{
+    color: white !important;
+}
+
+main{
+    margin: 0 auto;
+}

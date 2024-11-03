@@ -1,0 +1,42 @@
+#main_episode{
+    display: flex;
+    flex-direction: column ;
+}
+
+#episode_body{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 4vh;
+}
+
+#episode_body div{
+    padding: .5rem;
+}
+
+#main_episode textarea{
+    resize: vertical;
+    padding: 1rem;
+    width: 78%;
+    color: black;
+    border: 1px solid transparent;
+}
+
+#main_episode textarea:focus{
+    border-color: blue;
+}
+
+#main_episode form{
+    display: flex;
+    justify-content: space-between;
+}
+
+#main_episode button{
+    width: 15%;
+}
+
+.commentaire{
+    margin: .8rem 1rem;
+    border-top: 1px solid white;
+    padding: .3rem;
+}

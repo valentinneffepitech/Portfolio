@@ -1,0 +1,47 @@
+
+.mainSearchBarContainer{
+
+    margin-left: 10%;
+    width: 80%;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    padding: .5rem 2rem .5rem 2rem;
+    border-radius: 3rem;
+    box-shadow: 0px 0px .3rem rgb(31, 223, 100);
+
+}
+
+a{ 
+    color: rgb(31, 223, 100);
+    text-decoration: none;
+}
+
+.nav-link{
+    color: rgb(31, 223, 100);
+}
+
+.mainSearchBar{
+
+    font-size: 1.5rem;
+    width: 100%;
+    height: 2rem;
+    border: none;
+
+}
+
+.mainSearchBar:focus, .mainSearchBar:focus{
+    outline: none;
+}
+
+.resultTable{
+
+    height: 30rem;
+    
+}
+
+.nav-item{
+
+    width: 33.3333%;
+    text-align: center;
+
+}

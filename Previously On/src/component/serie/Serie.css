@@ -1,0 +1,120 @@
+.poster, main aside{
+    width: 20%;
+}
+
+
+main{
+    width: 80%;
+    display: flex;
+    margin: 2vh auto;
+    justify-content: space-between;
+    padding-top: 1rem;
+}
+
+main article{
+    width: 50%;
+}
+
+#description{
+    padding: 1rem;
+}
+
+main aside{
+    display: grid;
+    place-items: center;
+}
+
+/* select saison */
+
+#select_season{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin: 1vh auto;
+}
+
+#select_season select{
+    width: 98%;
+    border: 2px solid rgb(0, 9, 87);
+    padding: 1rem;
+    border-radius: .2rem;
+    border-color: transparent;
+    color: #FFF;
+    font-size: 1.2rem;
+    background-color: rgb(37, 37, 37);
+}
+
+#liste_episodes{
+    margin-top: 4vh;
+}
+
+.episode{
+    border: 1px solid black;
+    margin-top: 1vh;
+}
+
+.episode_body{
+    padding: 1rem;
+}
+
+.episode_buttons{
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid #ccc;
+}
+
+.episode_buttons button{
+    padding: 1rem 0;
+    width: 33.33333333333333333%;
+}
+
+.episode_buttons .commentlink:hover{
+    background-color: #ccc !important;    
+    color: black;
+}
+
+.episode_buttons .unseen:hover{
+    background-color: green;
+    color: white;
+}
+
+.episode .seen:hover{
+    background-color: red;
+    color: white;
+}
+
+.container
+{
+    color: white;
+    border: 2px solid black;
+    border-radius: 25px;
+    box-shadow: 5px 5px 5px 5px grey;
+    margin: 150px auto;
+    background-color: black;
+    
+}
+
+.poster
+{
+    border: 2px solid white;
+}
+
+.title 
+{
+    color: white !important;
+}
+
+#genres
+{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}    
+
+.genre 
+{
+    border: 1px solid white;
+    padding: 5px;
+    border-radius: 15%;
+    box-shadow: 2px 2px 2px 2px white;
+}

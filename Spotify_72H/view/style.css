@@ -1,0 +1,165 @@
+#a{
+  height: 650px;
+  overflow: scroll;
+  margin-top: 50px;
+  width: 400px;
+  overflow-wrap: break-word;
+}
+
+*{
+  background-color: #26272b;
+  color: #f1f1f1;
+}
+
+nav{
+  background-color: #26272b;
+
+}
+
+ol li, #previous, #next{
+  cursor:pointer;
+}
+site-footer
+{
+  background-color:#26272b;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#f1f1f1;
+}
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer a
+{
+  color:#f1f1f1;
+}
+.site-footer a:hover
+{
+  color:rgb(31, 223, 100);
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{  
+  color: #f1f1f1;
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:rgb(31, 223, 100);
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.site-footer .social-icons
+{
+  text-align:right
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:black
+}
+.copyright-text
+{
+  margin:0
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}
+
+aside {
+  margin: 50px;
+}
+.btn {
+  background-color: rgb(31, 223, 100);
+}
+.btn:hover{
+  background-color: black;
+  color:white;
+}
+
+.album#a{
+  width:20%;
+  margin-left: 15%;
+}
+
+.list-group-item{
+  margin-top: 10px;
+}
+
+#footer_list{
+  display: flex;
+  justify-content: space-between;
+}
+
+#logo{
+  aspect-ratio: 1/1;
+}
+
+.navbar-brand img{
+  margin-left:40%;
+}
+
+nav{
+  display: flex;
+  justify-content: center;
+}
+
+.list-group-item a{
+  color: #f1f1f1;
+  text-decoration: none;
+}
+
+.list-group-item a:hover{
+  color: rgb(31, 223, 100);
+  text-decoration: underline;
+}
+
+#preview{
+  width: 70vw;
+}

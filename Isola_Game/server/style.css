@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#plateau{
+    width: 50%;
+    aspect-ratio: 1/1;
+    margin: 1rem auto;
+}
+
+#plateau > div{
+    display: flex;
+}
+
+.case{
+    background-color: #EC9A29;
+    border: 1px solid #000;
+    width: 15%;
+    aspect-ratio: 1/1;
+}
+
+.Pion0, .Pion1{
+    width: 100%;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+}
+
+body{
+    background: #143642;
+}
+
+.Pion0{
+    background-color: #143642;
+    border: 2px solid #FA8334;
+}
+
+.Pion1{
+    background-color: #0F8B8D;
+    border: 2px solid white;
+}
+
+.case.used{
+    pointer-events: none;
+    background-color: #252525 !important;
+}
+
+h1{
+    color: #f6f6f6;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+h2{
+    text-align: center;
+    color: yellowgreen;
+    margin-top: 3rem;
+}
+
+.isPlayable{
+    background-color: rgb(0, 128, 75) !important;
+}
